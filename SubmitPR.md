@@ -18,6 +18,6 @@
 1. Clicking on **Create a pull request** button takes you to a pull request overview page.
     On the pull request overview page, you can view the status of your pull request. In most cases your pull request will need to be reviewed by at least one designated person before it can be merged. The pull request can be accepted and merged into the main branch by the reviewer, or it will be rejected. If the pull request is rejected, the reason given will be shown on the results page. Go ahead and make the requested changes, then resubmit your pull request.
 
-    ![](createPRbtn.png)
+    ![](pr-overview.png)
 
 
