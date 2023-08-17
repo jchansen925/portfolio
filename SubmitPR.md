@@ -2,7 +2,7 @@
 
 1. Once you push the changes to your branch, a **Compare & pull request** button will apper on  the upper right-hand side of the page.
 
-    [](CreateForkBtn.png)
+[](CreateForkBtn.png)
 
 1. Click on the **Compare & pull request** button and you will be taken to a screen with the **Open a pull request** heading.
 
