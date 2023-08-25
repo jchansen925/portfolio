@@ -24,7 +24,6 @@
     ![](ForkedBranch.png)
 
 
-
 ## Steps to clone the repo:
 
 
