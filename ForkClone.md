@@ -11,11 +11,11 @@
 
 1. You will now be on a page with the heading **Create a new fork**.
 
-     There are two fields which are required, Owner and Repository name. Make sure the owner is you and the repository name is correct. These fields should already be populated when you clicked to this page in step 2.
+     Two fields are required, Owner and Repository name. Make sure the owner is you and the repository name is correct. These fields should already be populated when you click on this page in step 2.
 
     ![](CreateFork.png)
 
-2. Click on the green **Create fork** button on the lower right hand corner of the page.
+2. Click on the green **Create fork** button on the lower right-hand corner of the page.
 
     ![](CreateForkBtn.png)
 
@@ -40,7 +40,7 @@
     Clone this repo to your local machine using
     ```git clone git@github.com:gbowne1/codebooker.git```.
 
-    Once you have successfully cloned the repository, a new sub-directory will appear in the location where you ran the clone repository commands. This new sub-directory will have the same name as the original repository that was cloned.
+Once you have successfully cloned the repository, a new sub-directory will appear in the location where you ran the clone repository commands. This new sub-directory will have the same name as the original repository that was cloned.
  
 1. Create your feature branch using ```git checkout -b my-feature```.
 
@@ -49,5 +49,5 @@
 1. Push to the branch using ```git push origin my-feature```.
 
 1. Create a new [pull request] (SubmitPR.md).
-    After your pull request is merged, can you delete your feature branch.
+    After your pull request is merged, you can delete your feature branch.
 
