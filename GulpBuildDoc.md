@@ -54,7 +54,7 @@ function clean(done) {
 }
 ```
 
-The **pages** function compiles the separate files of email content, including layouts, pages, and partials, into flat HTML files. These files are then parsed using [Inky](http://github.com/zurb/inky) templates. The pages function uses the Gulp [src method](https://gulpjs.com/docs/en/api/src/) to find the location of the separate build files. This location is in the first part of the array passed to gulp.src: `src/pages/**/*.html`. Anything sent to gulp.src in the second position of the array is discarded: `!src/pages/archive/**/*.html`. The pages function then calls the JavaScript pipe method to call functions in order, giving each function the output of the previous function. The pipe calls the flat file generator Panini to build the email html file from multiple elements. These results are then passed to inky, which converts the Inky templating language into a responisve browser-ready html email file. Finally, the results are piped to the [gulp.dest](https://gulpjs.com/docs/en/api/dest) method, which places production ready html email files into the dist folder.
+The **pages** function compiles the separate files of email content, including layouts, pages, and partials, into flat HTML files. These files are then parsed using [Inky](http://github.com/zurb/inky) templates. The pages function uses the Gulp [src method](https://gulpjs.com/docs/en/api/src/) to find the location of the separate build files. This location is in the first part of the array passed to gulp.src: `src/pages/**/*.html`. Anything sent to gulp.src in the second position of the array is discarded: `!src/pages/archive/**/*.html`. The pages function then calls the JavaScript pipe method to call functions in order, giving each function the output of the previous function. The pipe calls the flat file generator Panini to build the email html file from multiple elements. These results are then passed to Inky, which converts the Inky templating language into a responisve browser-ready html email file. Finally, the results are piped to the [gulp.dest](https://gulpjs.com/docs/en/api/dest) method, which places production ready html email files into the dist folder.
 
 ```javascript
 import panini   from 'panini';
@@ -84,7 +84,7 @@ function resetPages(done) {
 }
 ```
 
-The **sass** function compiles SASS into CSS. Much like the pages function, the sass function uses pipes to call two [gulp plugins](https://gulpjs.com/docs/en/getting-started/using-plugins), [sass](https://www.npmjs.com/package/gulp-sass) and [postcss](https://www.npmjs.com/package/gulp-postcss), to convert SASS files into CSS. The new CSS files are then put into the css folder of the dist directory.
+The **sass** function compiles SASS into CSS. Much like the pages function, the sass function uses pipes to call two [Gulp plugins](https://gulpjs.com/docs/en/getting-started/using-plugins), [sass](https://www.npmjs.com/package/gulp-sass) and [postcss](https://www.npmjs.com/package/gulp-postcss), to convert SASS files into CSS. The new CSS files are then put into the css folder of the dist directory.
 
 ```javascript
 const $ = plugins();
