@@ -143,7 +143,7 @@ function server(done) {
 ```
 
 
-The **watch** function uses the Gulp watch function to detect changes to files that happen in the file paths passed to it. If a change to any of the files take place, the Gulp [watch function](https://gulpjs.com/docs/en/api/watch) automatically starts up a new build process and reloads the files in the browser, so that any changes made are immediately visible to the developer.
+The **watch** function uses the Gulp watch function to detect changes to files that happen in the file paths passed to it. If a change to any files takes place, the Gulp [watch function](https://gulpjs.com/docs/en/api/watch) starts a new build process and reloads the files in the browser so that any changes made are immediately visible to the developer.
 
 ```javascript
 function watch() {
