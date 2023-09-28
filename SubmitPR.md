@@ -9,7 +9,7 @@
      ![](OpenPR.png)
 
 1. In the title bar, you can give your pull request a name. 
-    In the text area below the title, you can add a description of what is in the pull request. Note that a title is required. and you cannot click on the **Create a pull request** button without giving your pull request a title.
+    In the text area below the title, you can add a description of what is in the pull request. Note that a title is required. and you cannot click the **Create a pull request** button without giving your pull request a title.
 
 1. Next, open your new pull request by clicking on the green **Create a pull request** button. 
 
