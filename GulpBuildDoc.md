@@ -2,7 +2,7 @@
 
 **This is the build process for building and serving HTML emails that were initially created from multiple template files into a single html email to be served.**
 
-In this use case, the Gulp build process has the following features:
+In this use case, the Gulp build process has the following features: 
 
 - Handlebars HTML templates with [Panini](http://github.com/zurb/panini)
 - Simplified HTML email syntax with [Inky](http://github.com/zurb/inky)
