@@ -11,11 +11,11 @@
 
 1. You will now be on a page with the heading **Create a new fork**.
 
-     There are two fields which are required, Owner and Repository name. Make sure the owner is you and the repository name is correct. These fields should already be populated when you clicked to this page in step 2.
+     There are two fields that are required, Owner and Repository name. Make sure the owner is you and the repository name is correct. These fields should already be populated when you click on this page in step 2.
 
     ![](CreateFork.png)
 
-2. Click on the green **Create fork** button on the lower right hand corner of the page.
+2. Click on the green **Create fork** button on the lower right-hand corner of the page.
 
     ![](CreateForkBtn.png)
 
