@@ -1,33 +1,33 @@
-# Fork and Clone 
+# Fork and clone 
 
-## Steps to fork the repo: 
+## Steps to fork the repository (repo): 
 
 1. Go to the main GitHub page of the repo:
     (https://github.com/gbowne1/codebooker/)
    
-1. Once you are on the main GitHub page of the repo, click the **Fork** button at the top right of the page. 
+1. Select **Fork** at the top right of the page. 
 
     ![](fork.png)
 
-1. You will now be on a page with the heading **Create a new fork**.
+    This opens a page with the heading **Create a new fork**.
 
-     There are two fields which are required, Owner and Repository name. Make sure the owner is you and the repository name is correct. These fields should already be populated when you clicked to this page in step 2.
+1. Review the prepopulated fields to make sure the owner is you and the repo name is correct.
 
     ![](CreateFork.png)
 
-2. Click on the green **Create fork** button on the lower right hand corner of the page.
+1. Select **Create fork** in the lower right corner of the page.
 
     ![](CreateForkBtn.png)
 
-3. You will now have a forked version of the original repo that is up to date with the master branch of the original repo.
+1. You now have a forked version of the original repo that is up to date with the master branch of the original repo.
 
     ![](ForkedBranch.png)
 
-
 ## Steps to clone the repo:
 
-
-1. Open a terminal window and go to the location where you want your cloned repository to reside.
+1. Open a terminal window.
+1. Go to the location where you want your cloned repo to reside.
+1. Clone the repo using HTTP or SSH.
 
     #### Clone using HTTP:
 
@@ -39,14 +39,16 @@
     Clone this repo to your local machine using
     ```git clone git@github.com:gbowne1/codebooker.git```.
 
-    Once you have successfully cloned the repository, a new sub-directory will appear in the location where you ran the clone repository commands. This new sub-directory will have the same name as the original repository that was cloned.
+    After you have successfully cloned the repo, a new sub-directory appears in the location where you ran the clone repo commands. This new sub-directory has the same name as the original repo that you cloned.
  
 1. Create your feature branch using ```git checkout -b my-feature```.
 
-1. After you've made your changes to the code, commit your changes using ```git commit -m 'feat: My new feature'```.
+1. Make changes to the code.
+  
+1. Commit the changes using ```git commit -m 'feat: My new feature'```.
 
 1. Push to the branch using ```git push origin my-feature```.
 
-1. Create a new [pull request] (SubmitPR.md).
-    After your pull request is merged, can you delete your feature branch.
+1. Create a new [pull request](SubmitPR.md).
+    After the pull request is merged, you can delete your feature branch.
 
