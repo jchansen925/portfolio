@@ -11,9 +11,9 @@ In this use case, the Gulp build process has the following features:
 - Built-in BrowserSync server
 - Full email inlining process
 
-This document is meant to explain the Gulp build process in detail.
+This document explains the Gulp build process in detail.
 
-Gulp is an automated build tool built with JavaScript that allows developers to automate slow and cumbersom build process, thus saving many hours of development time. If you are new to Gulp, a good place to start is their [getting started documentation](https://gulpjs.com/docs/en/getting-started/quick-start).
+Gulp is an automated build tool coded with JavaScript, that allows developers to automate slow and cumbersom build processes, thus saving many hours of development time. If you are new to Gulp, a good place to start is their [getting started documentation](https://gulpjs.com/docs/en/getting-started/quick-start).
 
 This Gulp build file has a number of dependencies that are used in the build process. These can be installed in the project with NPM.
 
