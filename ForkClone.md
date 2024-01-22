@@ -29,7 +29,7 @@ This opens a page with the heading **Create a new fork**.
     Clone this repo to your local machine using
     ```git clone https://github.com/gbowne1/codebooker.git```.
 
-    #### Clone using SSH:
+#### Clone using SSH:
 
     Clone this repo to your local machine using
     ```git clone git@github.com:gbowne1/codebooker.git```.
