@@ -39,9 +39,8 @@ This opens a page with the heading **Create a new fork**.
 
 1. Open a terminal window.
 2. Go to the location where you want your cloned repo to reside.
-3. Clone the repo using HTTP or SSH.
-   
-    Once you have successfully cloned the repository, a new sub-directory will appear in the location where you ran the clone repository commands. This new sub-directory will have the same name as the original repository that was cloned.
+
+    After you have successfully cloned the repo, a new sub-directory appears in the location where you ran the clone commands. This new sub-directory has the same name as the original repo that you cloned.
  
 1. Create your feature branch using ```git checkout -b my-feature```.
 
