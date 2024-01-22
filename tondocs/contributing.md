@@ -35,7 +35,7 @@ git checkout feature/<FEATURE_NAME>
 
 ### Create pull request
 
-After implementing your new feature (or hotfix) in your local branch, you should
+After implementing your new feature (or hotfix) in your local branch, 
 commit and push changes to your fork repository. After committing and pushing your changes, you can create a pull-request.
 
 ---
