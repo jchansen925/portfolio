@@ -134,7 +134,7 @@ a:active {
     justify-content: space-between;
     align-items: center;
     background-color: var(--color-primary-darker);
-    /* height: 9rem; */
+    position: fixed;
     width: 100%;
     padding: 0 6rem;
     z-index: 100;
