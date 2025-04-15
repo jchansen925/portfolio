@@ -1,0 +1,778 @@
+/*
+-- 01 Typography System
+- SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+- FONT WEIGHTS: 
+Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700x
+
+- LINE HEIGHTS: 
+Default: 1
+Small: 1.05
+Medium: 1.2
+Paragraph default: 1.6
+
+- LETTER SPACING
+  - 0.5px;
+  - 0.75px;
+
+- FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+-- 02 COLORS
+
+- Primary:  #3c403d;
+- Tints: #fbfbfb (tints and shades generator site
+maketintsandshades.com)
+- Shades: #f4f2ef, 
+- Accents:
+- Grays: #555, #333;
+- Button: #004238;
+
+ GEO Pallete 
+--- Mid Brown: #99755b;
+--- Light Brown: #b6977e;
+--- Lightest Brown: #eab488;
+--- Slate Green: #849495;
+--- Gray: #343434;
+--- Darker Green: #525c54;
+
+-- Shadows
+
+-- Barder Radius
+Default: 9px
+
+-- White Space
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+// images from unsplash.com for free
+// for people, customers UIfaces
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* percentage of user's browser font-size setting, default in browser is 16px */
+  overflow-x: hidden;
+  font-size: 62.5%;
+
+  /* scroll-behavior: smooth; */
+}
+
+body {
+  /* font-family: "Inter", sans-serif; good for tech */
+  font-family: "Rubik", sans-serif; /* a bit more rounded */
+  line-height: 1;
+  font-weight: 400;
+  background-color: #fbfbfb;
+  color: #3c403d;
+
+  /* Only works if there is nothing absolutely positioned in relation to body */
+  overflow-x: hidden;
+}
+
+.container {
+  /* 1140px */
+  max-width: 124rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+  /* margin-bottom: 9.6rem; */
+}
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.3s;
+}
+
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+/**************************************/
+/* HEADER */
+/**************************************/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #525c54;
+  height: 9.6rem;
+  padding: 0 4.8rem;
+  position: relative;
+}
+/**************************************/
+/* NAVIGATION */
+/**************************************/
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 4.8rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #eab488;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  color: #fff;
+  background-color: rgb(132, 148, 149);
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: #697d7e;
+}
+
+*:focus {
+  outline: none;
+  /* outline: 4px dotted #e67e22; */
+  /* outline-offset: 8px; */
+  box-shadow: 0 0 0 0.8rem rgba(211, 235, 237, 0.5);
+}
+
+/* MOBILE */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+/**************************************/
+/* HERO SECTION */
+/* padding: 4.9rem 0 9.6rem 0;  9.6rem = 96px with html font size set to 10px; */
+/**************************************/
+.section-hero {
+  padding: 4.8rem 0 9.6rem 0;
+  background-color: #343434;
+  /* background: url("../img/geology-2.jpg") no-repeat center top;
+  border-radius: 8px;
+  background-size: cover;
+  width: 97%;
+  margin: 0 auto;
+  overflow: hidden;
+  min-height: 74rem; * */
+}
+
+.hero {
+  /* max-width: 130rem; */
+  /* margin: 0rem auto 0 auto; */
+  width: 98%;
+  background: url("../img/geology-2.jpg") no-repeat center top;
+  border-radius: 8px;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  align-items: center;
+  margin: 0 auto;
+  overflow: hidden;
+  min-height: 74rem;
+}
+
+.hero-shadow {
+  background-color: rgba(0, 0, 0, 0.35);
+  height: 100%;
+  min-height: 74rem;
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+}
+
+.hero-text-box {
+  grid-column: 2;
+  grid-row: 1 / 3;
+  color: #fff;
+  margin-top: 24rem;
+  padding-right: 2rem;
+}
+
+.hero-description,
+.geology-description,
+.about-description {
+  font-size: clamp(1.5rem, 2vw, 3.5rem);
+  /* font-size: 2.5rem; */
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.about-description {
+  color: #fff;
+}
+
+.geology-description {
+  text-align: left;
+  color: #fff;
+}
+c .heading-primary,
+.heading-secondary {
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.5px;
+}
+
+.heading-primary__services {
+  font-size: clamp(2rem, 4vw, 6rem);
+  line-height: 1.05;
+  margin-bottom: 12.2rem;
+  color: #fff;
+  text-align: center;
+}
+
+.heading-primary {
+  font-size: clamp(2rem, 4vw, 6rem);
+  /* font-size: 5.2rem; */
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+  font-size: clamp(1.5rem, 3.5vw, 4.4rem);
+  /* font-size: 4.4rem; */
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+  &.quote {
+    margin-bottom: 1rem;
+    color: #241507;
+  }
+}
+
+/**************************************/
+/* Geology SECTION */
+/**************************************/
+.section-geology {
+  padding: 9.6rem 0;
+  text-align: center;
+  background-color: #343434;
+  padding-top: 0;
+
+  .heading-secondary {
+    color: #fff;
+    margin: 0 auto;
+  }
+}
+
+.section-specialties,
+.section-privacy {
+  padding: 9.6rem 0 9.6rem 0;
+  background-color: #525c54;
+}
+
+.speciaties-container {
+  max-width: 116rem;
+  margin: 0 auto;
+  display: grid;
+  /* grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr)); */
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 4.8rem;
+  row-gap: 6.4rem;
+}
+
+.specialties-item {
+  background-color: #b6977e;
+  padding: 2rem;
+  color: #fff;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  overflow: auto;
+  border-radius: 8px;
+  .specialties-icon {
+    width: 6.4rem;
+  }
+}
+
+.specialties-item h3 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+  line-height: 1.2;
+}
+
+section.services,
+section.about,
+section.privacy,
+section.contact {
+  padding: 9.6rem 0;
+  background-color: #343434;
+}
+
+.services-container {
+  max-width: 116rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 4.8rem;
+  row-gap: 10rem;
+  align-items: center;
+}
+
+.services-title {
+  font-size: 3rem;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+
+.services-text,
+.privacy-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  color: #fff;
+}
+
+.privacy-text {
+  line-height: normal;
+  margin-bottom: 2rem;
+}
+
+.services-item__image {
+  width: 100%;
+  background: url("../img/ditch.png") no-repeat center top;
+  border-radius: 8px;
+  background-size: cover;
+  overflow: hidden;
+  height: 35rem;
+}
+
+.about-container,
+.privacy-container {
+  max-width: 116rem;
+  margin: 0 auto;
+}
+
+/**************************************/
+/* SERVICES */
+/**************************************/
+section.services,
+section.testimonials {
+  padding: 9.6rem 0;
+}
+
+section.testimonials {
+  background-color: #343434;
+}
+
+.testimonials h2.heading-secondary {
+  color: #fff;
+  margin-bottom: 4.6rem;
+}
+.testimonies {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 9.6rem;
+  column-gap: 2rem;
+
+  .testimony-text {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 1.6rem;
+    color: #fff;
+  }
+
+  .testimonial-name {
+    font-size: 1.6rem;
+    color: #fff;
+  }
+}
+/**************************************/
+/* Contact/Quote */
+/**************************************/
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 11px;
+  background-image: linear-gradient(to right bottom, #eab488, #886548);
+  overflow: hidden;
+}
+
+.cta-text-box {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  color: #241507;
+
+  .cta-text {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 4.8rem;
+  }
+}
+
+.cta-image-box {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(199, 154, 117, 0.35),
+      rgba(151, 90, 40, 0.35)
+    ),
+    /* background-image: linear-gradient(
+      to right bottom,
+      rgba(235, 151, 78, 0.35),
+      rgba(230, 125, 34, 0.35)
+    ), */
+      url(../img/ditch.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.cta-form {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr; */
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.cta-form input {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: #fdf2e9;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cta-form textarea {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: #fdf2e9;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.privacy-text strong {
+  color: #eab488;
+}
+
+/* FOOTER */
+/**************************************/
+footer {
+  padding: 12.8rem 0;
+  /* border-top: 1px solid #eee; */
+  background-color: #525c54;
+}
+
+.grid--footer {
+  grid-template-columns: 1.5fr 1.5fr 1fr;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #eab488;
+  transition: all 0.3s;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  margin-top: 3.4rem;
+  gap: 2.4rem;
+
+  .social-icon {
+    width: 2em;
+    height: 2em;
+  }
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+  color: #eab488;
+}
+
+.address {
+  color: #eab488;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+/** mobile styles **/
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 59em) {
+  .btn-mobile-nav {
+    display: block;
+  }
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+/* .icon-mobile-nav[name="close-outline"] {
+  display: none; 
+} 
+*/
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+@media (max-width: 59em) {
+  .main-nav {
+    background-color: rgba(82, 92, 84, 0.97);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+    /* display: none; */
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 59em) {
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+}
+
+.nav-open .icon-mobile-nav[name="close-outline"] {
+  display: block;
+}
+
+.nav-open .icon-mobile-nav[name="menu-outline"] {
+  display: none;
+}
+
+/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
+
+/**************************/
+/* BELOW 1344px (Smaller desktops) */
+/**************************/
+
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+
+  /* .heading-primary {
+    font-size: 4.4rem;
+  } */
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 75em) {
+  html {
+    /* 9px / 16px  */
+    font-size: 56.25%;
+  }
+  .speciaties-container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 3rem 0 3rem;
+  }
+}
+
+@media (max-width: 59em) {
+  html {
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 50%;
+  }
+
+  .speciaties-container {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 3rem 0 3rem;
+  }
+
+  .services-container {
+    max-width: 48rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2.4rem;
+    row-gap: 5rem;
+    align-items: center;
+  }
+
+  .testimonies {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 2.4rem 1.6rem;
+  }
+}
+
+/*
+
+
+
+*/
+
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+
+@media (max-width: 45em) {
+  .about-container {
+    max-width: 85rem;
+  }
+  .grid--footer {
+    grid-template-columns: 1.5fr;
+    row-gap: 4.6rem;
+  }
+
+  .cta {
+    grid-template-columns: 1fr;
+  }
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+  header {
+    padding: 0 2.8rem;
+  }
+
+  .about-container {
+    max-width: 39rem;
+  }
+
+  .heading-primary {
+    font-size: clamp(2rem, 5.2vw, 6rem);
+  }
+
+  .heading-primary__services {
+    font-size: clamp(2rem, 7vw, 6rem);
+    margin-bottom: 7.2rem;
+  }
+
+  .hero {
+    width: 90%;
+    grid-template-columns: 1fr;
+  }
+
+  .hero-text-box {
+    margin-top: 13rem;
+    padding-left: 5.5rem;
+  }
+  .hero-description,
+  .geology-description,
+  .about-description {
+    font-size: clamp(2rem, 2vw, 3.5rem);
+    /* font-size: 2.5rem; */
+    line-height: 1.6;
+    margin-bottom: 0;
+  }
+
+  section.services,
+  section.testimonials {
+    padding: 3rem 0;
+  }
+
+  section.specialties,
+  section.privacy {
+    padding: 6.6rem 0 6.6rem 0;
+  }
+
+  .footer {
+    padding: 5.8rem 0;
+  }
+
+  .testimonies {
+    margin-bottom: 0;
+  }
+
+  .testimonial-name {
+    margin-bottom: 4rem;
+  }
+}
